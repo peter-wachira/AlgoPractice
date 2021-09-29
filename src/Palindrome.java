@@ -16,7 +16,6 @@ public class Palindrome {
             }
             if(Character.toLowerCase(s.charAt(i++)) != Character.toLowerCase(s.charAt(j--))){
                 System.out.println("false");
-
                 return false;
             }
 
