@@ -1,6 +1,10 @@
 package librarycatalogue;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Book {
+
     String title;
     int pageCount;
     int ISBN;
@@ -22,7 +26,7 @@ public class Book {
         return this.ISBN;
     }
 
-    public boolean isCheckedOut() {
+    public boolean getIsCheckedOut() {
         return this.isCheckedOut;
     }
 
