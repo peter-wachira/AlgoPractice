@@ -1,20 +1,24 @@
 package librarycatalogue;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Book {
 
+    // Properties, Fields, Global Variables
     String title;
     int pageCount;
     int ISBN;
-    boolean isCheckedOut;
-    int dayCheckedOut;
+    boolean isCheckedOut; // whether or not the book is checked out
+    int dayCheckedOut = -1;
 
+    // Constructor
+    public Book(String bookTitle, int bookPageCount, int bookISBN) {
+        this.title = bookTitle;
+        this.pageCount = bookPageCount;
+        this.ISBN = bookISBN;
+        isCheckedOut = false;
+    }
 
-
-    //Getters
-    public String getTitle(){
+    // Getters --> INSTANCE METHODS
+    public String getTitle() {
         return this.title;
     }
 
@@ -34,25 +38,14 @@ public class Book {
         return this.dayCheckedOut;
     }
 
-    public Book(String bookTitle, int bookPageCount, int bookISBN){
-        this.title = bookTitle;
-        this.pageCount= bookPageCount;
-        this.ISBN = bookISBN;
-        isCheckedOut = false;
-    }
-
-
-
-    //Setters
-    public  void  setisCheckedOut(boolean newIsCheckedOut, int currentDayCheckedout){
+    // SETTERS
+    public void setIsCheckedOut(boolean newIsCheckedOut, int currentDayCheckedOut) {
         this.isCheckedOut = newIsCheckedOut;
-        setdayCheckedOut(currentDayCheckedout );
+        setDayCheckedOut(currentDayCheckedOut);
     }
 
-    //Setters
-    private  void  setdayCheckedOut(int day){
+    private void setDayCheckedOut(int day) {
         this.dayCheckedOut = day;
-
     }
 
 }
