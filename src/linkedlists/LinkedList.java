@@ -5,17 +5,17 @@ import javax.sound.midi.Soundbank;
 public class LinkedList {
     Node head;
 
-    public void insert(int data){
+    public void insert(int data) {
         Node node = new Node();
         node.data = data;
         node.next = null;
 
-        if (head== null){
+        if (head == null) {
             head = node;
-        }else {
+        } else {
             //transversing between nodes
             Node n = head;
-            while (n.next!= null){
+            while (n.next != null) {
                 n = n.next;
             }
             n.next = node;
@@ -23,47 +23,61 @@ public class LinkedList {
     }
 
 
-
-    public void show(){
+    public void show() {
         Node node = head;
-        while ( node.next!= null){
+        while (node.next != null) {
             System.out.println(node.data);
             node = node.next;
         }
-        System.out.println(node.data );
+        System.out.println(node.data);
     }
 
 
-    public void  insertStart(int data ){
+    public void insertStart(int data) {
         //Create node
         Node node = new Node();
         //Assign data to the node
         node.data = data;
         //Create next node
-        node.next= null;
+        node.next = null;
         //Assign the next element with the previous head node
-        node.next= head;
+        node.next = head;
         //Head is changed to that node (the node being inserted at start)
         head = node;
     }
 
 
-    public void insertAt(int index, int data){
+    public void insertAt(int index, int data) {
         Node node = new Node();
-        node.data= data;
+        node.data = data;
         node.next = null;
 
-        if (index==0){
+        if (index == 0) {
             insertStart(data);
-        }
-        Node n = head;
-        for (int i =0; i< index-1; i ++){
-            n = n.next;
-        }
-        // assign the address of the next node to the address of the previous pointer
-        node.next = n.next;
-        n.next = node;
+        } else {
+            Node n = head;
+            for (int i = 0; i < index - 1; i++) {
+                n = n.next;
+            }
+            // assign the address of the next node to the address of the previous pointer
+            node.next = n.next;
+            n.next = node;
 
+        }
     }
 
+  public void deleteAt(int index){
+        if (index ==0){
+            //change head location to next node
+            head = head.next;
+        }else {
+            //traverse to that location
+            Node n = head;
+            for (int i =0; i<index-1; i++){
+                n = n.next;
+            }
+
+
+        }
+  }
 }
