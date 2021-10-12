@@ -1,4 +1,4 @@
-package arrayquestion
+package smallestpair
 
 class SmallestPairDifference {
 
@@ -7,6 +7,8 @@ class SmallestPairDifference {
        [26,134,135,15,17]
     answer: [28,26]
      */
+
+
     fun smallestDifference(arrayOne: MutableList<Int>, arrayTwo: MutableList<Int>): List<Int> {
         // Write your code here.
         arrayOne.sort()
