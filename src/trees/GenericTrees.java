@@ -17,6 +17,10 @@ public class GenericTrees {
         display(this.root);
     }
 
+
+
+
+
     private void display(Node node) {
         String str = node.data + " ==> ";
         for (Node child: node.children) {
@@ -71,4 +75,29 @@ public class GenericTrees {
         //return reference of the root node
         return node;
     }
+
+
+    public int height() {
+        return this.height(root);
+    }
+
+    //calculate tree height
+    private int height(Node node){
+        int tree_height = 0;
+        //loop through children checking max height of subtrees using a recursive loop
+        for(Node child: node.children){
+            int child_height = height(child);
+            if(child_height > tree_height){
+                tree_height = child_height;
+            }
+        }
+
+        //return height of longest sub tree + the current node
+        return tree_height + 1;
+    }
+
+
+
+
+
 }

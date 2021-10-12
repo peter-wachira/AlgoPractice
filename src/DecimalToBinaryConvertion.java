@@ -15,7 +15,7 @@ public class DecimalToBinaryConvertion {
     public static void convertToBinary(int base10Number) {
         int remainder = 0;
         StringBuilder tempString = new StringBuilder();
-        if (!Integer.toString(base10Number).isBlank() || !Integer.toString(base10Number).isEmpty()) {
+        if (Integer.toString(base10Number).length() != 0) {
             while (base10Number > 0) {
                 remainder = base10Number % 2;
                 base10Number = base10Number /2;
