@@ -1,7 +1,5 @@
 package linkedlists;
 
-import javax.sound.midi.Soundbank;
-
 public class LinkedList {
     Node head;
 
@@ -66,18 +64,18 @@ public class LinkedList {
         }
     }
 
-  public void deleteAt(int index){
-        if (index ==0){
+    public void deleteAt(int index) {
+        if (index == 0) {
             //change head location to next node
             head = head.next;
-        }else {
+        } else {
             //traverse to that location
             Node n = head;
-            for (int i =0; i<index-1; i++){
+            for (int i = 0; i < index - 1; i++) {
                 n = n.next;
             }
 
 
         }
-  }
+    }
 }

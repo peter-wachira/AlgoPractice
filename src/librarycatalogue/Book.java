@@ -38,14 +38,14 @@ public class Book {
         return this.dayCheckedOut;
     }
 
+    private void setDayCheckedOut(int day) {
+        this.dayCheckedOut = day;
+    }
+
     // SETTERS
     public void setIsCheckedOut(boolean newIsCheckedOut, int currentDayCheckedOut) {
         this.isCheckedOut = newIsCheckedOut;
         setDayCheckedOut(currentDayCheckedOut);
-    }
-
-    private void setDayCheckedOut(int day) {
-        this.dayCheckedOut = day;
     }
 
 }
