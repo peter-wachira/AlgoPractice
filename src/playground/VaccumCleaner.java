@@ -1,3 +1,5 @@
+package playground;
+
 public class VaccumCleaner {
 
     public boolean vaccumReturnsToStart(String moves) {

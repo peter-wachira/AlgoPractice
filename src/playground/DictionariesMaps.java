@@ -1,3 +1,5 @@
+package playground;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -5,7 +7,7 @@ public class DictionariesMaps {
 
     public static void main(String[] args) {
         // English to Spanish Dictionary
-        Map<String,String> englSpanDictionary = new HashMap<String,String>();
+        Map<String, String> englSpanDictionary = new HashMap<String, String>();
         // Putting things inside our dictionary
         englSpanDictionary.put("Monday","Lunes");
         englSpanDictionary.put("Tuesday", "Martes");
@@ -42,7 +44,7 @@ public class DictionariesMaps {
         System.out.println(shoppingList.get("Ham"));
         System.out.println(shoppingList.get("Oreos"));
         // Key-Value Pairs Print Out
-        System.out.println(shoppingList.toString());
+        System.out.println(shoppingList);
         // Is Empty?
         System.out.println(shoppingList.isEmpty());
         // Remove things
@@ -50,13 +52,12 @@ public class DictionariesMaps {
         // Replace values for a certain key
         shoppingList.replace("Bread", Boolean.FALSE);
         // Key-Value Pairs Print Out
-        System.out.println(shoppingList.toString());
-
+        System.out.println(shoppingList);
 
 
         // Clear our dictionary
         shoppingList.clear();
-        System.out.println(shoppingList.toString());
+        System.out.println(shoppingList);
         // Is Empty?
         System.out.println(shoppingList.isEmpty());
 

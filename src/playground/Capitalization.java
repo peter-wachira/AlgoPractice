@@ -1,4 +1,4 @@
-import java.io.OutputStream;
+package playground;
 
 public class Capitalization {
     public static void main(String[] args) {

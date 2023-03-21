@@ -1,5 +1,6 @@
-import java.io.*;
-import java.util.*;
+package playground;
+
+import java.util.Scanner;
 
 class PrintOddEvenCharacters {
 

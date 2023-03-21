@@ -1,3 +1,5 @@
+package playground;
+
 import java.util.Scanner;
 
 public class DecimalToBinaryConvertion {
@@ -27,7 +29,6 @@ public class DecimalToBinaryConvertion {
     }
 
 
-
     public static int getDecimal(int binary){
         int decimal = 0;
         int n = 0;
@@ -43,7 +44,6 @@ public class DecimalToBinaryConvertion {
         }
         return decimal;
     }
-
 
 
     //    Problem Statement
@@ -79,7 +79,6 @@ public class DecimalToBinaryConvertion {
     Sample Output 2
 
     2*/
-
 
 
     public static void consecutiveBinaryDigits(int base10Number){
