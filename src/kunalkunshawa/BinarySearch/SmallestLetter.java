@@ -4,7 +4,7 @@ package kunalkunshawa.BinarySearch;
 /*
  * @lc app=leetcode id=744 lang=java
  *
- * [744] Find Smallest Letter Greater Than Target
+ * [744] Find Smallest Letter Greater  Than Target
  */
 
 public class SmallestLetter {
