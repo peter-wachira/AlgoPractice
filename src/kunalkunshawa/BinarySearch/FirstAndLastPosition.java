@@ -17,7 +17,7 @@ public class FirstAndLastPosition {
         int end = search(nums, target, false);
         ans[0] = start;
         ans[1] = end;
-        return ans;
+                return ans;
     }
 
     // this function returns the index value of the target

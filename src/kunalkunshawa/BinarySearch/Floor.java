@@ -8,7 +8,7 @@ public class Floor {
         System.out.println(ans);
     }
 
-    // return the index: greatest number <= target
+    // return the index: greatest    <= target
     static int floor(int[] arr, int target) {
         // but what if the target is greater than the greatest number in the array
         if (target > arr[arr.length - 1]) {
